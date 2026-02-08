@@ -14,9 +14,10 @@ const tourSchema = new mongoose.Schema(
       // validate: [validator.isAlpha, 'Tour name must only contain characters'],
     },
     slug: String,
+
     duration: {
       type: Number,
-      reqired: [true, 'A tour must have a duraton'],
+      required: [true, 'A tour must have a duraton'],
     },
     maxGroupSize: {
       type: Number,
